@@ -2,9 +2,9 @@
 	<head>
 		<title>jQuery Spinning Numbers</title>
 		<link rel="stylesheet" href="css/spinning.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		
+
 		<style>
-			div.seperator { height:30px; clear:both; }
+			div.separator { height:30px; clear:both; }
 		</style>
 	</head>
 	<body>
@@ -13,20 +13,20 @@
 			<div id="credits">
 			</div>
 		</div>
-		<div class="seperator"></div>
+		<div class="separator"></div>
 		<input type="button" value="Increase" id="increase_score">
-		<div class="seperator"></div>
+		<div class="separator"></div>
 		<hr>
 		Like this little plugin? Check more stuff about web & mobile development at <a href="http://sarp.erdag.org">Sarp Erdag's Blog</a>.
 
 		<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jqSpinning.js" type="text/javascript" charset="utf-8"></script>
-		
+
 		<script>
 			$(document).ready(function() {
 				$("#credits").spinning({ initial_value:200 });
 				var scoreView = $('#credits').data("spinning");
-				
+
 				$("#increase_score").click(function(){
 					scoreView.increment(10);
 				});
